@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<FilterCriterion uuid="165e0d76-9e2e-4b01-8996-54f5cb8584da">
+		<InternalInfo>
+			<xr:GeneratedType name="FilterCriterionManager.СвязанныеДокументы" category="Manager">
+				<xr:TypeId>88059e4d-03c9-4ae3-8ff7-350d9f8fbc30</xr:TypeId>
+				<xr:ValueId>12c12c5d-cb50-4cf2-bb08-f88012bf445a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="FilterCriterionList.СвязанныеДокументы" category="List">
+				<xr:TypeId>382993b9-9a17-4140-98cc-0b7e3ddf1c09</xr:TypeId>
+				<xr:ValueId>60711ef5-7617-4eee-9cd7-65a4c16f87be</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СвязанныеДокументы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Связанные документы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:DocumentRef.СчетНаОплатуПокупателя</v8:Type>
+				<v8:Type>cfg:DocumentRef.Платежное_поручение_исход</v8:Type>
+				<v8:Type>cfg:DocumentRef.Заявка_на_расходование_ДС</v8:Type>
+				<v8:Type>cfg:DocumentRef.Поступление_товаров_и_услуг</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПлатежноеПоручениеВходящее</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПланируемоеПоступлениеДС</v8:Type>
+			</Type>
+			<UseStandardCommands>true</UseStandardCommands>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Заявка_на_расходование_ДС.Attribute.Документ_основание</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Платежное_поручение_исход.Attribute.ПоступлениеТиУ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПланируемоеПоступлениеДС.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПлатежноеПоручениеВходящее.Attribute.ДокументДвижения</xr:Item>
+			</Content>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects/>
+	</FilterCriterion>
+</MetaDataObject>

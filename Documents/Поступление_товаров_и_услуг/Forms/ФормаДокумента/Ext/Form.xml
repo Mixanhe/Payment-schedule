@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="НайтиСвязаныеДокументы" id="50">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Command.НайтиСвязаныеДокументы</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.DataCompositionSelection</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="НайтиСвязаныеДокументыРасширеннаяПодсказка" id="51"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Организация" id="7">
+			<DataPath>Объект.Организация</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Дата_поступления" id="10">
+			<DataPath>Объект.Дата_поступления</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="Дата_поступленияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="Дата_поступленияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Ответственный" id="13">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Подразделение" id="16">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Сумма" id="19">
+			<DataPath>Объект.Сумма</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СуммаКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Контрагент" id="22">
+			<DataPath>Объект.Контрагент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КонтрагентКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="Комментарий" id="25">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<Table name="Список_товаров_и_услуг" id="28">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Список_товаров_и_услуг</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="Список_товаров_и_услугКонтекстноеМеню" id="29"/>
+			<AutoCommandBar name="Список_товаров_и_услугКоманднаяПанель" id="30"/>
+			<ExtendedTooltip name="Список_товаров_и_услугРасширеннаяПодсказка" id="31"/>
+			<SearchStringAddition name="Список_товаров_и_услугСтрокаПоиска" id="32">
+				<AdditionSource>
+					<Item>Список_товаров_и_услуг</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="Список_товаров_и_услугСтрокаПоискаКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="Список_товаров_и_услугСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="Список_товаров_и_услугСостояниеПросмотра" id="35">
+				<AdditionSource>
+					<Item>Список_товаров_и_услуг</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="Список_товаров_и_услугСостояниеПросмотраКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="Список_товаров_и_услугСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="Список_товаров_и_услугУправлениеПоиском" id="38">
+				<AdditionSource>
+					<Item>Список_товаров_и_услуг</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="Список_товаров_и_услугУправлениеПоискомКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="Список_товаров_и_услугУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Список_товаров_и_услугНомерСтроки" id="41">
+					<DataPath>Объект.Список_товаров_и_услуг.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Список_товаров_и_услугНомерСтрокиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="Список_товаров_и_услугНомерСтрокиРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<InputField name="Список_товаров_и_услугУслуги" id="44">
+					<DataPath>Объект.Список_товаров_и_услуг.Услуги</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Список_товаров_и_услугУслугиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="Список_товаров_и_услугУслугиРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="Список_товаров_и_услугТовары" id="47">
+					<DataPath>Объект.Список_товаров_и_услуг.Товары</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="Список_товаров_и_услугТоварыКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="Список_товаров_и_услугТоварыРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Поступление_товаров_и_услуг</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НайтиСвязаныеДокументы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти связаные документы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Найти связаные документы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НайтиСвязаныеДокументы</Action>
+		</Command>
+	</Commands>
+</Form>
